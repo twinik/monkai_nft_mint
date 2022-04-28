@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.ItemNavbarProduct-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 0;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.ItemNavbarProduct-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+}
+
+.ItemNavbarProduct-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 450;
+  line-height: 20px;
+}
+
+.ItemNavbarProduct-description {
+  margin: 0;
+  font-size: 0.7em;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1000px) {
+  .ItemNavbarProduct-container {
+    border: none;
+    padding: 0;
+    flex: 1;
+  }
+  .ItemNavbarProduct-title {
+    font-size: 0.8em;
+    color: #415076;
+  }
+
+  .ItemNavbarProduct-description {
+    font-size: 0.6em;
+    color: #4150768f;
+  }
+  .ItemNavbarProduct-icon {
+    color: #415076;
+  }
+}

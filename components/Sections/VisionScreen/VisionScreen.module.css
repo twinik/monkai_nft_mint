@@ -1,0 +1,138 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.img {
+  width: 50%;
+  height: auto;
+}
+
+.left-content {
+  flex: 1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-content {
+  flex: 1;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border-left: 2px solid #5a5a5a;
+  margin: 5rem 3rem;
+  color: #fff;
+}
+
+.content-part {
+  padding-left: 1rem;
+}
+
+.title-box {
+  border-left: 3px solid #fff;
+  margin-left: -1px;
+  font-size: 24px;
+  letter-spacing: 1.9px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
+.vision {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.text {
+  font-size: 16px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+  line-height: 28px;
+}
+
+@media screen and (min-width: 768px) {
+  .img {
+    width: 80%;
+    height: auto;
+  }
+  .content {
+    margin: 2rem 5rem;
+  }
+  .content-part {
+    padding-left: 2rem;
+  }
+
+  .title-box {
+    font-size: 28px;
+  }
+
+  .vision {
+    font-size: 16px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .container {
+    flex-direction: row;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .text {
+    padding-top: 1rem;
+  }
+  .title {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .content {
+    margin: 0rem 11rem;
+  }
+  .content-part {
+    padding-left: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1660px) {
+  .content {
+    margin: 0rem 17rem;
+    grid-gap: 2rem;
+  }
+  .content-part {
+    padding-left: 3.5rem;
+  }
+  .img-container {
+    width: 40%;
+  }
+}

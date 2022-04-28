@@ -1,0 +1,16 @@
+.button-rounded-mobile {
+  padding: 1rem 2.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  letter-spacing: 0.08rem;
+  line-height: 22.4px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.71);
+  -webkit-box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.71);
+  -moz-box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.71);
+}
