@@ -13,6 +13,7 @@ export default function Button({ onClick, children, disabled }: ButtonProps) {
         className="font-openSea bg-gray-300/95 w-full mt-2"
         disabled={disabled}
         onClick={onClick}
+        style={{ fontFamily: "Chakra Petch", fontStyle: "italic" }}
       >
         {children}
       </button>

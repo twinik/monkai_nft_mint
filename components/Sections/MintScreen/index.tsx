@@ -4,7 +4,11 @@ import { Section } from "./sections";
 
 function index() {
   return (
-    <Section name="buy" mode="COMPRESSED" style={{ backgroundColor: "#000" }}>
+    <Section
+      name="buy"
+      mode="COMPRESSED"
+      style={{ backgroundColor: "#17161b", paddingTop: "5vw" }}
+    >
       <div className="w-full flex flex-col items-center xl:flex-row justify-evenly">
         <section className="w-full xl:w-[48%] mb-8 xl:mb-0 max-w-xl">
           <img

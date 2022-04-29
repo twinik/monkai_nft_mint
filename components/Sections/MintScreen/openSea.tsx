@@ -211,11 +211,17 @@ export const Buy = () => {
       <article
         className="flex flex-col pb-10 bg-white rounded-lg
         text-gray-800 font-openSea items-center"
-        style={{ fontFamily: "Montserrat" }}
+        style={{
+          fontFamily: "Chakra Petch",
+          backgroundColor: "rgba(185,72,65)",
+        }}
       >
         <section id="card-header" className="my-8 text-left mx-auto w-4/5">
-          <h1 className="font-openSea text-gray-800 text-2xl">
-            MINT YOUR METAPIZZA NFT
+          <h1
+            className="text-gray-800 text-2xl"
+            style={{ fontFamily: "Chakra Petch", fontWeight: "bold" }}
+          >
+            CLAIM YOUR MONKAI NFT
           </h1>
           <p>Total supply: TBD</p>
         </section>
@@ -238,7 +244,7 @@ export const Buy = () => {
               {unitPrice} ETH + gas
             </h5>
             <p className="">
-              {saleIsActive ? "Sale is active" : "Live 05/07/2022"}
+              {saleIsActive ? "Sale is active" : "Coming soon..."}
             </p>
           </span>
         </section>

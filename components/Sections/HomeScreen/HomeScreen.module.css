@@ -1,10 +1,11 @@
 .container {
   width: 100%;
-  height: 45vw;
-  background-image: url("../../../public/images/home.jpg");
+  height: 10vw;
+  background-image: url("../../../public/images/drip.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: #17161b;
 }
 
 .gradient {

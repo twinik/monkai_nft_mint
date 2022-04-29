@@ -4,6 +4,7 @@
   transition: 0.5s;
   z-index: 2;
   color: black;
+  background-color: #b94841;
 }
 
 .nav-container {
@@ -18,7 +19,7 @@
 }
 
 .active {
-  background-color: #fff;
+  background-color: #b94841;
   transition: 1s;
   padding: 0.3rem 1rem;
 }
@@ -39,7 +40,7 @@
   width: 68%;
   left: 0;
   top: 0;
-  background-color: #fff;
+  background-color: #b94841;
   z-index: 2;
   padding-left: 1.5rem;
   padding-top: 4rem;
@@ -47,7 +48,7 @@
 }
 
 .nav-hamburger {
-  background-color: #fff;
+  background-color: #b94841;
   border-radius: 50%;
 }
 
