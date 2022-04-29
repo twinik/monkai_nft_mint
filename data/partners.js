@@ -1,4 +1,4 @@
-export const data = [
+export const partners = [
   {
     name: "Ferrum Network",
     src: "https://assets-global.website-files.com/60ad35893565abff5cb2ec8a/60ad35893565abc9fbb2ecb8_Company%20logo%20(23).png",
