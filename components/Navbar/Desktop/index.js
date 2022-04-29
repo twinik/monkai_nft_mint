@@ -25,7 +25,7 @@ export default function mobile({ style, logo, width }) {
         </Link>
       </div>
 
-      <div className={ownStyles["nav-links-container"]}>
+      {/* <div className={ownStyles["nav-links-container"]}>
         {OptionsMenu.map(({ label, to }, index) =>
           index == 0 ? (
             <Link href={"/"}>
@@ -43,7 +43,7 @@ export default function mobile({ style, logo, width }) {
           )
         )}
         <ButtonRounded text={"Subscribe"} />
-      </div>
+      </div> */}
     </div>
   );
 }

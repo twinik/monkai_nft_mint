@@ -2,20 +2,23 @@ import React from "react";
 import Image from "next/image";
 import styles from "./BrandList.module.css";
 
-function index({ title, src, alt, data }) {
+function index({ title, data }) {
   return (
     <div className={styles["container"]}>
       <h2 className={styles["title"]}>{title}</h2>
       <div className={styles["list"]}>
         {data.map((item, index) => (
-          <Image
-            src={item}
-            alt={alt}
-            key={index}
-            width={100}
-            height={100}
-            layout="responsive"
-          />
+          <a href={item.link} target="_blank">
+            <Image
+              src={item.src}
+              alt={item.name}
+              key={index}
+              width={50}
+              height={50}
+              layout="responsive"
+              className={styles["image"]}
+            />
+          </a>
         ))}
       </div>
     </div>
