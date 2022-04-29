@@ -7,14 +7,16 @@
 }
 
 .title {
-  padding: 4rem 0 2rem 0;
+  padding: 1rem 0 1rem 0;
   font-family: "Chakra Petch", sans-serif;
   text-align: center;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   letter-spacing: 7px;
   color: #fff;
+  font-style: italic;
+
   /*   text-shadow: 0 0 5px #fff, 0 0 15px #fff, 0 0 20px #b94841, 0 0 30px #b94841,
     0 0 40px #b94841, 0 0 55px #b94841, 0 0 75px #b94841,
     2px 2px 2px rgba(206, 89, 55, 0); */
@@ -25,20 +27,47 @@
 }
 
 .list {
-  width: 60%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
 }
 
 .image {
-  width: 100%;
-  height: 100%;
   object-fit: contain;
-  border-radius: 50%;
   transition: transform 0.5s;
 }
 
 .image:hover {
   transform: translateY(-10%);
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .list {
+    width: 95%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+}
+
+@media (min-width: 1440px) {
+  .list {
+    width: 80%;
+  }
+  .title {
+    font-size: 2.3rem;
+  }
+}
+
+@media (min-width: 1660px) {
+  .list {
+    width: 60%;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
 }
