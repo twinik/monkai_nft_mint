@@ -30,6 +30,7 @@
   width: 90%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.5rem;
 }
 
 .image {
@@ -40,6 +41,12 @@
 .image:hover {
   transform: translateY(-10%);
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .list {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 @media (min-width: 768px) {
