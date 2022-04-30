@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
 import { ButtonRoundedMobile } from "../../Buttons";
-import style from "./mobile.module.css";
+import styles from "./mobile.module.css";
 import { useTransition, animated, config } from "react-spring";
 import ItemNavbarProduct from "../Components/ItemNavbarProduct";
 import ItemNavBar from "../Components/ItemNavBar";
@@ -33,12 +33,13 @@ export default function mobile({ style, logo, width }) {
           style={isOpen ? { opacity: 0 } : { width: 200, cursor: "pointer" }}
         >
           <Link href={"/"} replace>
-            <Image
+            {/* <Image
               className="nav-iconLogo"
               src={logo}
               alt="Logo"
               layout="responsive"
-            />
+            /> */}
+            <p className={styles["logo-text"]}>Monkai</p>
           </Link>
         </div>
         <div className={isOpen ? style["nav-hamburger"] : ""}>
@@ -67,7 +68,7 @@ export default function mobile({ style, logo, width }) {
               style={{ ...animStyle }}
               className={style["nav-slideContainer-content"]}
             >
-              <div style={{ paddingTop: "2.2rem", width: "90%" }}>
+              {/* <div style={{ paddingTop: "2.2rem", width: "90%" }}>
                 {ProductsOptions.map(({ title, icon, link }, index) => (
                   <ItemNavbarProduct
                     key={title}
@@ -84,10 +85,16 @@ export default function mobile({ style, logo, width }) {
                     setOpen={setOpen}
                   />
                 ))}
-              </div>
-              <div className={style["subscribe-container"]}>
-                <ButtonRoundedMobile text={"Subscribe"} />
-              </div>
+              </div> */}
+              <Link href={"/"} replace>
+                <div className={styles["monkai-logo"]}>
+                  <img
+                    src={"/images/monkai_white.png"}
+                    alt="monkai"
+                    className={styles["monkai-logo"]}
+                  />
+                </div>
+              </Link>
             </animated.div>
           )
       )}

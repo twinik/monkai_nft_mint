@@ -1,7 +1,8 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { AppProps } from "next/app";
 
 import Navbar from "../components/Navbar/Navbar";
+/* import { Navbar } from "../components/Navbar2/index"; */
 
 import { Web3ReactProvider } from "@web3-react/core";
 import { ethers } from "ethers";
@@ -15,6 +16,7 @@ const getLibrary = (provider: any) =>
 function MyApp({ Component, pageProps }: AppProps) {
   // @ts-ignore
   const [cookie, setCookie] = useCookies(["ref"]);
+  const [navbar, setNavbar] = useState<boolean>(false);
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);

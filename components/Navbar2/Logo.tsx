@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../assets/images/monkai-logo.png";
+import logo from "../../public/images/monkai-logo.png";
 
 export const Logo = () => {
   return (
