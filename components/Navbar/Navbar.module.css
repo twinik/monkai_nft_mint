@@ -1,5 +1,5 @@
 .nav-containerWrap {
-  position: sticky;
+  position: static;
   top: 0%;
   transition: 0.5s;
   z-index: 2;
