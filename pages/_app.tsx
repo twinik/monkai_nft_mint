@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { AppProps } from "next/app";
+import Head from "next/head";
 
 import Navbar from "../components/Navbar/Navbar";
 /* import { Navbar } from "../components/Navbar2/index"; */
@@ -28,10 +29,15 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <Web3ReactProvider getLibrary={getLibrary}>
-      <Navbar />
-      <Component {...pageProps} />
-    </Web3ReactProvider>
+    <>
+      <Head>
+        <title>NFT | Monkai Mint</title>
+      </Head>
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <Navbar />
+        <Component {...pageProps} />
+      </Web3ReactProvider>
+    </>
   );
 }
 // @ts-ignore
